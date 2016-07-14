@@ -3,6 +3,9 @@
 # The $pattern variable defines the email addresses we'll sanitize.
 $pattern = "/([^@\s]*)@[^@\s]*\.[^@\s]*/";
 
+# If the php is not in the same path as the mbox.txt files, add it here.
+$bin_path="OldSiteArchives";
+
 # The $replacement defines what to replace it with when found.
 $replacement = "[removed]";
 
