@@ -19,4 +19,13 @@ $find_str = "nonsense_text_for_base_search";
 
 $include_success = 1;
 
+// Setup basic error reporting and include paths/files.
+error_reporting(E_ALL);
+ini_set('display_errors', 'on');
+ini_set("include_path", '/home/linderor/php:' . ini_get("include_path") ); 
+
+// Include modules for the project.
+require_once 'Mail/Mbox.php';
+require_once 'HTTP/Request2.php';
+
 ?>
