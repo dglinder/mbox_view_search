@@ -13,6 +13,9 @@ $baseurl = "http://corvette-resto.com/OldSiteArchives/";
 $filebase = "/home/linderor/public_html/corvette-resto.com/private_files/crpl";
 $view_email = "view_email.php";
 
+# Set a lower boundary for searching
+$archive_start_year = 2000;
+
 $match_count = 50;
 
 $find_str = "nonsense_text_for_base_search";
