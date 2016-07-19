@@ -1,4 +1,8 @@
 <?php
+//read the subjects of the demo mailbox
+error_reporting(E_ALL);
+ini_set('display_errors', 'on');
+ini_set("include_path", '/home/linderor/php:' . ini_get("include_path") );
 
 # The $pattern variable defines the email addresses we'll sanitize.
 $pattern = "/([^@\s]*)@[^@\s]*\.[^@\s]*/";
@@ -16,6 +20,9 @@ $view_email = "view_email.php";
 # Set a lower boundary for searching
 $archive_start_year = 2000;
 
+$start_year = 2000;
+$start_month = 1;
+$start_index = 0;
 $match_count = 50;
 
 $find_str = "nonsense_text_for_base_search";
