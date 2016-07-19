@@ -31,4 +31,18 @@ ini_set("include_path", '/home/linderor/php:' . ini_get("include_path") );
 require_once 'Mail/Mbox.php';
 require_once 'HTTP/Request2.php';
 
+function sanitize_int($in, $sane, $min, $max) {
+  if (is_int( (int)$in )) {
+		// We know this is an integer so massage it into what we need.
+		$in = (int)$in;
+		if ( ($in < $min) or ($in > $max) ) {
+			$in = $sane;
+		}
+	} else {
+		// Set a sane value
+		$in = $sane;
+	}
+    return $in;
+}
+
 ?>
