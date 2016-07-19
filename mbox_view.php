@@ -1,7 +1,8 @@
 <?php
 
 $include_success = 0;
-$inc_file = $_SERVER['DOCUMENT_ROOT']."/".$bin_path."/include.php";
+#$inc_file = $_SERVER['DOCUMENT_ROOT']."/".$bin_path."/include.php";
+$inc_file = "include.php";
 include $inc_file;
 if ($include_success == 0) {
 	echo "<PRE>Failure to include files: ".$inc_file."</pre>";
