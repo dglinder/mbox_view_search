@@ -6,7 +6,11 @@ ini_set("include_path", '/home/linderor/php:' . ini_get("include_path") );
 
 $include_success = 0;
 #$inc_file = $_SERVER['DOCUMENT_ROOT']."/".$bin_path."/include.php";
+<<<<<<< HEAD
 $inc_file = "./include.php";
+=======
+$inc_file = "include.php";
+>>>>>>> cbe5450cc4b7201237cc0f7b38a65c55f1742939
 include $inc_file;
 if ($include_success == 0) {
 	echo "<PRE>Failure to include files: ".$inc_file."</pre>";
