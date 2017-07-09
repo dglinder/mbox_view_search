@@ -1,0 +1,18 @@
+mbox_view_search - planing document
+
+Every page:
+ Search form fields: find_str, start_date, end_date
+
+Search results:
+ Header and link for each archived email found
+   - Link to "View" page
+
+ Buttons:
+   - Next: Show if more results possible
+   - Prev: Show page of previous results
+
+View page:
+ Show archived email contents
+  - All email addresses redacted
+ Buttons:
+   - return: Return to search results page (link to "back" button)

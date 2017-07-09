@@ -1,0 +1,6 @@
+*.bz2
+*.gz
+*.tar
+*.tgz
+*/mbox.txt
+

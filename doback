@@ -1,0 +1,5 @@
+#!/bin/sh
+BKP=$(pwd | rev | cut -d\/ -f 1 | rev)-$(date +"%Y%m%d-%H%M")
+tar -cvjf ${BKP}.tar.bz2 *.php
+echo Saved to ${BKP}.tar.bz2
+
