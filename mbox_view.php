@@ -5,6 +5,7 @@ echo '<html>
 
 ini_set('display_errors', 'On');
 error_reporting(E_ALL | E_STRICT);
+# Hack to get script to find some ASmallOrange shared hosting libraries.
 ini_set("include_path", '/home/linderor/php:' . ini_get("include_path") );
 
 $inc_file = "include.php";
